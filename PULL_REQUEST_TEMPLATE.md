@@ -1,4 +1,4 @@
-Issue Fixed #
+Fixed Issue #
 
 ## Proposed Changes
 
