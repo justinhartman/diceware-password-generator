@@ -25,5 +25,5 @@ Whether it is fixing a bug or developing a new feature you want included in this
 
 Thank you for contributing to this project! Your help is valued far more than you may realise. :heart:
 
-[issues]: justinhartman/diceware-password-generator/issues
-[new-issue]: justinhartman/diceware-password-generator/issues/new
+[issues]: https://github.com/justinhartman/diceware-password-generator/issues
+[new-issue]: https://github.com/justinhartman/diceware-password-generator/issues/new
