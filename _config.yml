@@ -1,13 +1,13 @@
 theme: jekyll-theme-leap-day
 title: Diceware Password Generator
 description: Diceware password generator with multiple variations; written in Python.
-url: https://code.22digital.tech/diceware-password-generator/
+url: https://justin.hartman.me/diceware-password-generator/
 publisher: Justin Hartman
 lang: en_GB
 author:
   name: Justin Hartman
   email: justin@hartman.me
-  uri: http://justin.hartman.me
+  uri: https://justin.hartman.me/
   image: https://avatars3.githubusercontent.com/u/717118?s=460&v=4
 twitter:
   username: justinhartman
