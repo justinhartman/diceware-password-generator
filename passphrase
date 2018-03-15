@@ -1,7 +1,47 @@
 #!/usr/bin/env python
 # Diceware password generator in Python, in one tweet.
-# (words file is https://www.eff.org/files/2016/07/18/eff_large_wordlist.txt)
-# Because I have no dice:
-import random, sys
-w = [s.split()[1] for s in open(sys.path[0]+'/words')]
-print '-'.join(random.SystemRandom().choice(w) for i in range(5))
+import random, sys, getopt
+
+def main(argv):
+    words = [s.split()[1] for s in open(sys.path[0]+'/words')]
+    vorvig = [s.split()[0] for s in open(sys.path[0]+'/words-vorvig')]
+    short = [s.split()[1] for s in open(sys.path[0]+'/words-short-memorable')]
+    edit = [s.split()[1] for s in open(sys.path[0]+'/words-short-edit')]
+    beale = [s.split()[1] for s in open(sys.path[0]+'/words-beale')]
+    p = ''
+    n = ''
+    try:
+        opts, args = getopt.getopt(argv,"hbwvsen:",["beale","words","vorvig","number","short","edit"])
+    except getopt.GetoptError:
+        print 'Run ./passphrase -h for help.'
+        sys.exit(2)
+    for opt, arg in opts:
+        if opt == '-h':
+            print 'Usage: ./passphrase [options] [-n] <number of words>'
+            print '-w, --words     Standard word list (default)'
+            print '-v, --vorvig    Vorvig word list'
+            print '-s, --short     Short, memorable word list'
+            print '-e, --edit      Short, editable word list. Experimental.'
+            print '-b, --beale     Arnold Reinhold\'s Beale Diceware word list.'
+            print '--------------------------------------------------------'
+            print '-n, --number    Input an integer for the number of words'
+            print '                you want generated for your passphrase.'
+            sys.exit()
+        elif opt in ("-w", "--words"):
+            p = words
+        elif opt in ("-b", "--beale"):
+            p = beale
+        elif opt in ("-v", "--vorvig"):
+            p = vorvig
+        elif opt in ("-s", "--short"):
+            p = short
+        elif opt in ("-e", "--edit"):
+            p = edit
+        if opt in ("-n", "--number"):
+            n = range(int(arg))
+        elif opt:
+             n = range(5)
+    print '-'.join(random.SystemRandom().choice(p) for i in n)
+
+if __name__ == "__main__":
+    main(sys.argv[1:])

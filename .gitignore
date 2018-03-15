@@ -1,1 +1,7 @@
 passphrasec
+Gemfile
+Gemfile.lock
+_site/
+docs/
+.jekyll-*
+words-*
