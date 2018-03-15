@@ -1,4 +1,4 @@
-theme: jekyll-theme-midnight
+theme: jekyll-theme-leap-day
 title: Diceware Password Generator
 description: Diceware password generator with multiple variations; written in Python.
 url: https://code.22digital.tech/diceware-password-generator/
