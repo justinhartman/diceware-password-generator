@@ -1,13 +1,13 @@
 # Diceware Password Generator
 I have a problem with passwords. I take them very seriously and for at least the last 10 years I have been using some type of password manager to manage all my passwords and other critical, personal information.
 
-The problem with this scenario is that for years I have been using password generators, built within the app, to secure my online logins. Why is this a problem? Well... it isn't _per se_; the main issue is the **Master Password**, that is the one password to rule them all, well, it's rather easy to break.
+The problem with this scenario is that for years I have been using password generators, built within the app, to secure my online logins. Why is this a problem? Well... it isn't _per se_; the main issue is the **Master Password**, that is the one password to rule them all, well, mine is rather easy to break.
 
 I've often debated with myself around how to solve this problem. To remember a password like `:o0{n1$z'4yQ_?2RwW` is simply not going to happen. The thing is, in order to be secure you need a password to remember so as to only have it in your head and no physical evidence of it lying around. 
 
-And here is where the _Dicewear Password Generator (DPG)_ comes into play. DPG uses a world-list and _"dice"_ to output an easy to remember password based on a sequence of words like `boots-imbecile-nextdoor-espresso-cosmetics-remote`. While this is a long password, it certainly can be memorised - and quickly.
+And here is where the _Dicewear Password Generator (DPG)_ comes into play. DPG uses a world list and _"dice"_ to output an easy to remember password based on a sequence of words like `boots-imbecile-nextdoor-espresso-cosmetics-remote`. While this is a long password, it certainly can be memorised - and quickly.
 
-It turns out that not only is a password like `mumbo-giver-alarm-lived-gig-wages-exit` easy to memorise, it is over **100 times** more secure than this `%u}+6:~TY/(8uR[/vB` password.
+It turns out that not only is a password like `mumbo-giver-alarm-lived-gig-wages-exit` easy to memorise, it is over **100 times**<sup>[[1]](#footnote)</sup> more secure than this `%u}+6:~TY/(8uR[/vB` password.
 
 ## About the Dicewear Methodology
 Diceware is a method for picking passphrases that uses dice to select words at random from a special list called the Diceware Word List. Each word in the list is preceded by a five digit number. All the digits are between one and six, allowing you to use the outcomes of five dice rolls to select a word from the list.
@@ -166,6 +166,10 @@ This doesn't change the copyright or license of the original Dicewear software a
 ## Links
 * [Diceware passphrase home page][dice_home]
 * [EFF Dice-Generated Passphrases][eff] ([deep dive][deep_dive], [word list][wordlist])
+
+---
+
+<a name="footnote"><sup>[1]</sup></a> I don't actually know if this is accurate but it sounds impressive. Whether accurate or not, the DPG creates passwords that are extremely secure all thanks to entropy.
 
 [dice_home]: http://www.diceware.com
 [eff]: https://www.eff.org/dice
