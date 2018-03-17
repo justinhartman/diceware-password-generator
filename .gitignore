@@ -2,6 +2,7 @@
 passphrasec
 generate
 words-*
+.sass-cache
 
 ### Jekyll ###
 # I don't want to include the `_site` build files in the master branch.
