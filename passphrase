@@ -1,5 +1,12 @@
 #!/usr/bin/env python
-# Diceware password generator in Python, in one tweet.
+#
+# The author disclaims copyright to this source code. In place of
+# a legal notice, here is a blessing:
+#
+#    - May you do good and not evil.
+#    - May you find forgiveness for yourself and forgive others.
+#    - May you share freely, never taking more than you give.
+#
 import random, sys, getopt
 
 def main(argv):
@@ -17,15 +24,29 @@ def main(argv):
         sys.exit(2)
     for opt, arg in opts:
         if opt == '-h':
-            print 'Usage: ./passphrase [options] [-n] <number of words>'
+            print '# Version: diceware-password-generator 1.0.1'
+            print '# Release Date: 18 March 2018'
+            print '# Project: https://justin.hartman.me/projects/diceware-password-generator.html'
+            print '#'
+            print '# The author disclaims copyright to this source code. In place of'
+            print '# a legal notice, here is a blessing:'
+            print '#'
+            print '#   - May you do good and not evil.'
+            print '#   - May you find forgiveness for yourself and forgive others.'
+            print '#   - May you share freely, never taking more than you give.'
+            print '#'
+            print 'Usage: $ ./passphrase [options] [-n] <number of words>'
+            print 'Options:'
             print '-w, --words     Standard word list (default)'
             print '-v, --vorvig    Vorvig word list'
             print '-s, --short     Short, memorable word list'
             print '-e, --edit      Short, editable word list. Experimental.'
-            print '-b, --beale     Arnold Reinhold\'s Beale Diceware word list.'
+            print '-b, --beale     Beale Diceware word list.'
             print '--------------------------------------------------------'
             print '-n, --number    Input an integer for the number of words'
             print '                you want generated for your passphrase.'
+            print ''
+            print 'Example: $ ./passphrase --words -n 4'
             sys.exit()
         elif opt in ("-w", "--words"):
             p = words
