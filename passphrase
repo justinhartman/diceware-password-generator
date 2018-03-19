@@ -15,15 +15,16 @@ def main(argv):
     short = [s.split()[1] for s in open(sys.path[0]+'/words-short-memorable')]
     edit = [s.split()[1] for s in open(sys.path[0]+'/words-short-edit')]
     beale = [s.split()[1] for s in open(sys.path[0]+'/words-beale')]
-    p = ''
-    n = ''
+    p = words
+    n = range(5)
     try:
-        opts, args = getopt.getopt(argv,"hbwvsen:",["beale","words","vorvig","number","short","edit"])
-    except getopt.GetoptError:
-        print 'Run ./passphrase -h for help.'
+        opts, args = getopt.getopt(argv,"hbwvsen:",["beale","words","vorvig","number","short","edit", "help"])
+    except Exception as e:
+        print e
+        print 'To get help, run $ ./passphrase -h or $ ./passphrase --help'
         sys.exit(2)
     for opt, arg in opts:
-        if opt == '-h':
+        if opt in ('-h', '--help'):
             print '# Version: diceware-password-generator 1.0.1'
             print '# Release Date: 18 March 2018'
             print '# Project: https://justin.hartman.me/projects/diceware-password-generator.html'
@@ -37,7 +38,7 @@ def main(argv):
             print '#'
             print 'Usage: $ ./passphrase [options] [-n] <number of words>'
             print 'Options:'
-            print '-w, --words     Standard word list (default)'
+            print '-w, --words     Standard word list (default list)'
             print '-v, --vorvig    Vorvig word list'
             print '-s, --short     Short, memorable word list'
             print '-e, --edit      Short, editable word list. Experimental.'
@@ -47,7 +48,7 @@ def main(argv):
             print '                you want generated for your passphrase.'
             print ''
             print 'Example: $ ./passphrase --words -n 4'
-            sys.exit()
+            sys.exit(2)
         elif opt in ("-w", "--words"):
             p = words
         elif opt in ("-b", "--beale"):
@@ -60,8 +61,6 @@ def main(argv):
             p = edit
         if opt in ("-n", "--number"):
             n = range(int(arg))
-        elif opt:
-             n = range(5)
     print '-'.join(random.SystemRandom().choice(p) for i in n)
 
 if __name__ == "__main__":

@@ -1,4 +1,12 @@
 #!/bin/sh
+#
+# The author disclaims copyright to this source code. In place of
+# a legal notice, here is a blessing:
+#
+#    - May you do good and not evil.
+#    - May you find forgiveness for yourself and forgive others.
+#    - May you share freely, never taking more than you give.
+#
 curl -o words https://www.eff.org/files/2016/07/18/eff_large_wordlist.txt
 curl -o words-vorvig http://norvig.com/ngrams/count_1w.txt
 curl -o words-short-memorable https://www.eff.org/files/2016/09/08/eff_short_wordlist_1.txt
