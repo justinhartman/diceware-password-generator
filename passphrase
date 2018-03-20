@@ -25,8 +25,8 @@ def main(argv):
         sys.exit(2)
     for opt, arg in opts:
         if opt in ('-h', '--help'):
-            print '# Version: diceware-password-generator 1.0.2'
-            print '# Release Date: 19 March 2018'
+            print '# Version: diceware-password-generator 1.0.3'
+            print '# Release Date: 21 March 2018'
             print '# Project: https://justin.hartman.me/projects/diceware-password-generator.html'
             print '#'
             print '# The author disclaims copyright to this source code. In place of'
@@ -47,7 +47,11 @@ def main(argv):
             print '-n, --number    Input an integer for the number of words'
             print '                you want generated for your passphrase.'
             print ''
+            print 'Example: $ ./passphrase'
+            print 'Example: $ ./passphrase --words'
+            print 'Example: $ ./passphrase -w'
             print 'Example: $ ./passphrase --words -n 4'
+            print 'Example: $ ./passphrase -w -n 4'
             sys.exit(2)
         elif opt in ("-w", "--words"):
             p = words

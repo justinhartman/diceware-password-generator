@@ -17,6 +17,7 @@ There is a [dedicated project page][dpg] for the [Diceware Password Generator][d
 - The [licensing][licensing] of the software.
 - [Credits to the people][credits] who made this possible.
 - Interesting [links about Diceware][links].
+- [Release Notes][release].
 
 You can also [download the latest release][download] if you'd like to start getting your hands dirty :stuck_out_tongue_winking_eye:.
 
@@ -27,7 +28,7 @@ You can also [download the latest release][download] if you'd like to start gett
 [diceware]: http://www.diceware.com/
 [eff]: http://www.eff.org
 [dpg]: https://justin.hartman.me/projects/diceware-password-generator.html
-[download]: https://github.com/justinhartman/diceware-password-generator/archive/master.zip
+[download]: https://github.com/justinhartman/diceware-password-generator/releases
 [install]: https://justin.hartman.me/projects/diceware-password-generator.html#installation
 [wordlist]: https://justin.hartman.me/projects/diceware-password-generator.html#clone-repo-and-download-the-word-lists
 [use]: https://justin.hartman.me/projects/diceware-password-generator.html#usage
@@ -35,3 +36,4 @@ You can also [download the latest release][download] if you'd like to start gett
 [licensing]: https://justin.hartman.me/projects/diceware-password-generator.html#license
 [credits]: https://justin.hartman.me/projects/diceware-password-generator.html#credits
 [links]: https://justin.hartman.me/projects/diceware-password-generator.html#links
+[release]: https://justin.hartman.me/projects/diceware-password-generator-release-notes.html

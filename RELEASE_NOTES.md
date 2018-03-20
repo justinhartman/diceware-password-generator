@@ -1,6 +1,11 @@
 # Release Notes
 This is a dedicated page which documents the changes made to the [Diceware Password Generator][diceware] as well as all the release notes for the software. 
 
+## v1.0.3
+Release Date: 21 March 2018
+
+- Minor change to the output of the help section to include more examples by default.
+
 ## v1.0.2
 Release Date: 19 March 2018
 
